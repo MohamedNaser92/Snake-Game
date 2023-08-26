@@ -35,7 +35,7 @@ const foodGrid = function () {
 
 
 
-//Dirextions 
+//Directions 
 const direction = function (e) {
     if (e.key === "ArrowUp" && snakeDirectionY != 1) {
         snakeDirectionX = 0;
@@ -54,6 +54,7 @@ const direction = function (e) {
 
 
 const endGame = function () {
+    clearInterval(setIntervalNew);
     finalResult.classList.remove('hidden')
     document.querySelector('body').style.backgroundColor = 'hwb(0 0% 0% / 0.6)';
 }
@@ -98,7 +99,7 @@ const startGame = function () {
         html += `<div class="snake" style="grid-area: ${snake[i][1]} / ${snake[i][0]};"></div>`;
 
         if (i !== 0 && snake[0][1] === snake[i][1] && snake[0][0] === snake[i][0]) {
-            gameOver = true;
+            return gameOver = true;
         }
     }
     playArea.innerHTML = html
