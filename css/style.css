@@ -1,0 +1,116 @@
+body {
+    margin: 5px;
+    background-color: rgb(134, 205, 173);
+}
+
+.body-game {
+    margin: 20px;
+
+}
+
+.final-result {
+    width: fit-content;
+}
+
+.hidden {
+    display: none;
+}
+
+.game-box {
+    position: absolute;
+    top: 25%;
+    width: 604px;
+    height: 404px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+
+.game-over {
+    font-size: 32px;
+    font-weight: bold;
+    font-style: oblique;
+    margin: 2px;
+    color: red;
+    border: 1px black solid;
+    background-color: black;
+    width: 250px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.score-lable-result,
+.high-score-lable-result {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 5px;
+}
+
+.again {
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 24px;
+    margin: 3px;
+    padding: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+.again:hover {
+    cursor: pointer;
+}
+
+.score-lable,
+.high-score-lable {
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    vertical-align: middle;
+    margin-bottom: 0;
+
+}
+
+.results {
+    background-color: rgb(85, 77, 77);
+    height: 40px;
+
+}
+
+.play-area {
+    background-color: black;
+    height: 360px;
+    width: 100%;
+    display: grid;
+    /* grid-template: repeat(70, 1fr)/repeat(50, 1fr); */
+    grid-template-columns: repeat(35, 1fr);
+    grid-template-rows: repeat(25, 1fr);
+
+
+}
+
+.left,
+.right,
+.up,
+.down {
+    scale: 200%;
+    margin: 15px;
+}
+
+.left,
+.right,
+.up,
+.down:hover {
+    cursor: pointer;
+}
+
+.food {
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.snake {
+    background-color: rgb(43, 150, 212);
+}
